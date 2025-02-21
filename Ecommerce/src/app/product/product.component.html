@@ -1,0 +1,10 @@
+<p>Lista de Productos</p>
+<ul>
+    @for (product of productList; track product.name) {
+        <li>{{product.name}}</li>
+    }
+</ul>
+
+<button (click)="transformText()">Abracadabra!</button>
+<p>{{announcement}}</p>
+
