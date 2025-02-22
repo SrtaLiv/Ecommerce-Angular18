@@ -1,0 +1,25 @@
+nav{
+    padding: 0 1rem 0 1rem;
+    display: column;
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 56px;
+        align-items: center;
+    }
+    .items{
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+        .menu:hover{
+            cursor: pointer;
+        }
+    }
+    ul{
+        visibility: hidden;
+    }
+    ul.show {
+        visibility:visible; /* Mostrar cuando tenga la clase 'show' */
+    }
+}

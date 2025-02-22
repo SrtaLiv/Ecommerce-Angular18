@@ -1,2 +1,32 @@
-<p>navbar works!</p>
+<nav>
+    <header>
+        <div class="items">
+            <lucide-icon [img]="Menu" (click)="toggleMenu()" class="my-icon menu" name="menu"></lucide-icon>
+            <lucide-angular [img]="Search" name="search" class="my-icon-search"></lucide-angular>
+        </div>
+        <h2>47 Street</h2>
+        <div class="items">
+            <lucide-angular [img]="User" class="my-icon"></lucide-angular>
+            <lucide-angular [img]="ShoppingBag" class="my-icon" name="shopping-bag"></lucide-angular>
+        </div>
+    </header>
 
+<!-- Agregar clase 'show' cuando menuOpen sea true -->
+<ul [class.show]="menuOpen">
+        <li>Anticipo AW25</li>
+        <li>FINAL SALE</li>
+        <li>Back To School</li>
+        <li>Mich</li>
+        <li>Calzado</li>
+        <li>Licencias</li>
+        <li>Gift Cards</li>
+        <li>Accesorios</li>
+        <li>47 Club</li>
+    </ul>
+</nav>
+
+<lucide-icon [img]="MapPin" class="my-icon" name="map-pin"></lucide-icon>
+
+<app-footer></app-footer>
+
+<!-- <lucide-angular [img]="User" color="red" class="my-icon"></lucide-angular> -->
