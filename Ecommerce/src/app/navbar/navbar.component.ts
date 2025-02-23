@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { LucideAngularModule, User, ShoppingBag, Search, Menu, MapPin, X, MessageSquareMore, Twitter, Instagram, Facebook } from 'lucide-angular';
 import { FooterComponent } from '../footer/footer.component';
-import { ButtonModule } from 'primeng/button';
+// import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [LucideAngularModule, FooterComponent, ButtonModule],
+  imports: [LucideAngularModule, FooterComponent],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
