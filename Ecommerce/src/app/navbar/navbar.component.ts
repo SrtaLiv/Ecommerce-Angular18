@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LucideAngularModule, User, ShoppingBag, Search, Menu, MapPin, X } from 'lucide-angular';
+import { LucideAngularModule, User, ShoppingBag, Search, Menu, MapPin, X, MessageSquareMore, Twitter, Instagram, Facebook } from 'lucide-angular';
 import { FooterComponent } from '../footer/footer.component';
 
 @Component({
@@ -16,6 +16,10 @@ export class NavbarComponent {
   readonly Menu = Menu;
   readonly MapPin = MapPin;
   readonly X = X;
+  readonly MessageSquareMore = MessageSquareMore;
+  readonly Facebook = Facebook;
+  readonly Instagram = Instagram;
+  readonly Twitter = Twitter;
 
   logo = 'Olivia';
   menuOpen = false;

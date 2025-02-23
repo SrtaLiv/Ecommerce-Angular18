@@ -33,22 +33,39 @@
         </div>
         <div class="nav-bottom" [class.show]="menuOpen">
             <div class="nav-mid">
-                <a href="">Mi cuenta</a>
-                <a href="">Dudas</a>
-                <a href="">Locales</a>
+                <span>
+                    <a href="">Mi cuenta</a>
+                    <lucide-angular size={{32}} [img]="User" color="red" class="my-icon"></lucide-angular>
+                </span>
+
+                <span>
+                    <a href="">Dudas</a>
+                    <lucide-icon size={{32}} [img]="MessageSquareMore" name="message-square-more"></lucide-icon>
+                </span>
+
+                <span>
+                    <a href="">Locales</a>
+                    <lucide-icon size={{32}} [img]="MapPin" class="my-icon" name="map-pin"></lucide-icon>
+                </span>
             </div>
+
             <div class="social-media" [class.show]="menuOpen">
-                <a href="">Ig</a>
-                <a href="">Face</a>
-                <a href="">Tiktok</a>
+                <span>
+                    <lucide-icon name="instagram" size={{32}} [img]="Instagram"></lucide-icon>
+                </span>
+                <span>
+                    <lucide-icon name="facebook" [img]="Facebook" size={{32}}></lucide-icon>
+                </span>
+                <span>
+                    <lucide-icon name="twitter" [img]="Twitter"  size={{32}}></lucide-icon>
+                </span>
             </div>
         </div>
     </div>
 
 </nav>
 
-<lucide-icon [img]="MapPin" class="my-icon" name="map-pin"></lucide-icon>
+
 
 <app-footer></app-footer>
 
-<!-- <lucide-angular [img]="User" color="red" class="my-icon"></lucide-angular> -->
