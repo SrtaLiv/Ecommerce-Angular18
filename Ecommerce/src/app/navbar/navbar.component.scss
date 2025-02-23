@@ -28,11 +28,14 @@ nav {
         width: 90%;
         z-index: 20;
         background-color: #FFFFFF;
-        position: absolute;
+        position: fixed; // Changed from absolute to fixed
+        top: 0; // Added to ensure it starts from the top
+        left: 0; // Added to ensure it starts from the left
         justify-content: space-between;
         flex-direction: column;
 
-        .show {
+        &.show { // Changed from .show to &.show
+            visibility: visible;
             background-color: #FFFFFF;
             top: 0;
             display: flex;
@@ -46,12 +49,17 @@ nav {
 
         .nav-top {
             position: relative;
-            top: 0;
             display: flex;
             justify-content: space-between;
             background-color: #FFFFFF;
             z-index: 3;
-            width: 90vw;
+            width: 100%; // Changed from 90vw
+
+            .x {
+                position: absolute; // Added to position the X
+                right: 1rem; // Added to position the X
+                top: 1rem; // Added to position the X
+            }
 
             .list {
                 list-style: none;

@@ -4,10 +4,6 @@ import { SignupComponent } from './signup/signup.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 export const routes: Routes = [
-    // {
-    //     path: '',
-    //     component: ProductComponent
-    // },
     {
         path: '',
         component: NavbarComponent

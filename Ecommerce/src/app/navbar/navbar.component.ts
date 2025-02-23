@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { LucideAngularModule, User, ShoppingBag, Search, Menu, MapPin, X, MessageSquareMore, Twitter, Instagram, Facebook } from 'lucide-angular';
 import { FooterComponent } from '../footer/footer.component';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [LucideAngularModule, FooterComponent],
+  imports: [LucideAngularModule, FooterComponent, ButtonModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
@@ -26,6 +27,7 @@ export class NavbarComponent {
 
   toggleMenu() {
     this.menuOpen = !this.menuOpen; // Alternar estado del menú
+    document.body.classList.toggle('show');
   }
 
 

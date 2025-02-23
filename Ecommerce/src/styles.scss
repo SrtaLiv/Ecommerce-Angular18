@@ -5,6 +5,10 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
+}
+
+body.show {
     background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con transparencia */
-    transition: background-color 0.3s ease-in-out; /* Efecto suave */
 }
