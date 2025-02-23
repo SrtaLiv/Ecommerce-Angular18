@@ -1,25 +1,95 @@
-nav{
-    padding: 0 1rem 0 1rem;
-    display: column;
-    header{
+nav {
+    display: flex;
+    flex-direction: column;
+
+    header {
+        padding: 0 1rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         height: 56px;
         align-items: center;
-    }
-    .items{
-        display: flex;
-        flex-direction: row;
-        gap: 6px;
-        .menu:hover{
-            cursor: pointer;
+
+        .items {
+            display: flex;
+            flex-direction: row;
+            gap: 6px;
+
+            .menu:hover {
+                cursor: pointer;
+            }
         }
     }
-    ul{
+
+    .nav-links {
+        display: flex;
         visibility: hidden;
+        height: 100vh;
+        width: 90%;
+        z-index: 20;
+        background-color: #FFFFFF;
+        position: absolute;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .show {
+            background-color: #FFFFFF;
+            top: 0;
+            display: flex;
+            left: 1rem;
+            visibility: visible;
+            padding: 0;
+            margin: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .nav-top {
+            position: relative;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            background-color: #FFFFFF;
+            z-index: 3;
+            width: 90vw;
+
+            .list {
+                list-style: none;
+                color: black;
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                width: 90vw;
+            }
+            ul li, .x{
+                margin-top: 2rem;
+                margin-left: 1rem;
+            }
+
+            .x {
+                justify-content: flex-end;
+                /* Push the cross icon to the right */
+                cursor: pointer;
+            }
+        }
+
+        .nav-bottom {
+            display: flex;
+            flex-direction: column;
+            .nav-mid {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                border-bottom: solid 1px #f345f3;
+            }
+
+            .social-media {
+                display: flex;
+                align-items: start;
+                justify-content: space-evenly;
+            }
+
+        }
     }
-    ul.show {
-        visibility:visible; /* Mostrar cuando tenga la clase 'show' */
-    }
+
 }

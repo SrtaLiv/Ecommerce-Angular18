@@ -11,18 +11,40 @@
         </div>
     </header>
 
-<!-- Agregar clase 'show' cuando menuOpen sea true -->
-<ul [class.show]="menuOpen">
-        <li>Anticipo AW25</li>
-        <li>FINAL SALE</li>
-        <li>Back To School</li>
-        <li>Mich</li>
-        <li>Calzado</li>
-        <li>Licencias</li>
-        <li>Gift Cards</li>
-        <li>Accesorios</li>
-        <li>47 Club</li>
-    </ul>
+    <!-- Agregar clase 'show' cuando menuOpen sea true -->
+    <!-- NAV LINKS  -->
+    <div class="nav-links" [class.show]="menuOpen">
+        <div class="nav-top">
+            <ul class="list" [class.show]="menuOpen">
+                <li>Anticipo AW25</li>
+                <li>FINAL SALE</li>
+                <li>Back To School</li>
+                <li>Mich</li>
+                <li>Calzado</li>
+                <li>Licencias</li>
+                <li>Gift Cards</li>
+                <li>Accesorios</li>
+                <li>47 Club</li>
+            </ul>
+            <div>
+                <lucide-icon [class.show]="menuOpen" [img]="X" name="x" (click)="toggleMenu()" class="x my-icon menu"
+                    name="menu"></lucide-icon>
+            </div>
+        </div>
+        <div class="nav-bottom" [class.show]="menuOpen">
+            <div class="nav-mid">
+                <a href="">Mi cuenta</a>
+                <a href="">Dudas</a>
+                <a href="">Locales</a>
+            </div>
+            <div class="social-media" [class.show]="menuOpen">
+                <a href="">Ig</a>
+                <a href="">Face</a>
+                <a href="">Tiktok</a>
+            </div>
+        </div>
+    </div>
+
 </nav>
 
 <lucide-icon [img]="MapPin" class="my-icon" name="map-pin"></lucide-icon>
