@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 /* You can add global styles to this file, and also import other style files */
 *{
     padding: 0;
@@ -11,4 +13,15 @@ body {
 
 body.show {
     background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con transparencia */
+}
+
+
+.shop-looks-images{
+    display: flex;  
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    img{
+        width: 200px;
+        height: 200px;
+    }
 }
