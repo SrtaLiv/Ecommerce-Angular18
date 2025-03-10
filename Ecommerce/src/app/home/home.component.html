@@ -114,13 +114,56 @@
                 </div>
             </div>
         </div>
-        <!-- <h3>Bolso</h3> acomodar title debajo de imagenes -->
 
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselCloth" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselCloth" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<!-- ENVIO GRATIS Y NEWSLETTER -->
+<!-- 
+<section>
+    <h4>{{promo.title}}</h4>
+    <p>{{promo.description}}</p>
+    <lucide-angular [img]="MousePointerClick" class="my-icon"></lucide-angular>
+</section>
+ -->
+
+<section>
+    <div id="carouselBeneficios" class="carousel slide carousel-home">
+        <div class="carousel-indicators">
+            @for (promo of promosList; track promo.id) {
+                <button type="button" data-bs-target="#carouselBeneficios" 
+                    [attr.data-bs-slide-to]="$index"
+                    [class.active]="$index === 0"
+                    [attr.aria-current]="$index === 0"
+                    [attr.aria-label]="'Slide ' + ($index + 1)">
+                </button>
+            }
+        </div>
+        <div class="carousel-inner">
+            @for (promo of promosList; track promo.id) {
+                <div class="carousel-item" [class.active]="$index === 0">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center p-4">
+                        <lucide-angular [img]="getIcon(promo.icon)" class="my-icon mb-3"></lucide-angular>
+                        <h4 class="mb-2">{{promo.title}}</h4>
+                        <p>{{promo.description}}</p>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBeneficios" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBeneficios" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>

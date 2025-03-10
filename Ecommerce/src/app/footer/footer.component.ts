@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
+import { LucideAngularModule, MoveRight, Instagram, Facebook, Youtube } from 'lucide-angular';
 
-import { LucideAngularModule, Truck, CreditCard, RefreshCw } from 'lucide-angular';
 @Component({
   selector: 'app-footer',
   standalone: true,
@@ -9,9 +9,13 @@ import { LucideAngularModule, Truck, CreditCard, RefreshCw } from 'lucide-angula
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-  readonly Truck = Truck;
-  readonly CreditCard = CreditCard;
-  readonly RefreshCw = RefreshCw;
+  readonly MoveRight = MoveRight;
+  readonly Instagram = Instagram;
+  readonly Facebook = Facebook;
+  // readonly TikTok = TikTok; hay que buscar en otra pagina
+  // readonly Spotify = Spotify;
+  readonly Youtube = Youtube;
+
 
 }
 

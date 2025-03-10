@@ -66,12 +66,10 @@ $medium: 900px;
     }
 }
 
-
 .shop-looks-title {
     text-align: center;
     position: relative;
 }
-
 
 .carousel-control-next-icon{
     color: black;
@@ -79,5 +77,5 @@ $medium: 900px;
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    filter: invert(1); /* Invierte el color (de blanco a negro) */
+    filter: invert(1); 
 }

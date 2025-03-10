@@ -6,7 +6,7 @@ import { LucideAngularModule, User, ShoppingBag, Search, Menu, MapPin, X, Messag
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, LucideAngularModule],
+  imports: [RouterOutlet, LucideAngularModule, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -31,7 +31,6 @@ export class AppComponent {
     this.menuOpen = !this.menuOpen; // Alternar estado del menú
     document.body.classList.toggle('show');
   }
-
 
   title = 'Ecommerce';
 }
