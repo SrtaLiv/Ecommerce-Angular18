@@ -11,11 +11,10 @@
     </div>
   </header>
 
-  <!-- Agregar clase 'show' cuando menuOpen sea true -->
   <!-- NAV LINKS  -->
   <div class="nav-links" [class.show]="menuOpen">
     <div class="nav-top">
-      <ul class="list" [class.show]="menuOpen">
+      <div class="list" [class.show]="menuOpen">
         <a href="#">Anticipo AW25</a>
         <a href="#">FINAL SALE</a>
         <a href="#">Back To School</a>
@@ -25,9 +24,9 @@
         <a href="#">Gift Cards</a>
         <a href="#">Accesorios</a>
         <a href="#">47 Club</a>
-      </ul>
+      </div>
       <div>
-        <lucide-icon [class.show]="menuOpen" [img]="X" name="x" (click)="toggleMenu()" class="x my-icon menu"
+        <lucide-icon [class.show]="menuOpen"  size={{32}} [img]="X" name="x" (click)="toggleMenu()" class="x my-icon menu"
           name="menu"></lucide-icon>
       </div>
     </div>
@@ -35,7 +34,7 @@
       <div class="nav-mid">
         <span>
           <a href="">Mi cuenta</a>
-          <lucide-angular size={{32}} [img]="User" color="red" class="my-icon"></lucide-angular>
+          <lucide-angular size={{32}} [img]="User" class="my-icon"></lucide-angular>
         </span>
 
         <span>

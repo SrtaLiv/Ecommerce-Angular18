@@ -59,6 +59,7 @@ nav {
                 position: absolute; // Added to position the X
                 right: 1rem; // Added to position the X
                 top: 1rem; // Added to position the X
+                cursor: pointer;
             }
 
             .list {
@@ -68,18 +69,14 @@ nav {
                 flex-direction: column;
                 padding: 0;
                 width: 90vw;
+                margin: 2rem;
             }
 
-            a{
-                text-decoration: none;
-            }
-            ul li,
-            .x {
-                margin-top: 1.5rem;
-                margin-left: 2rem;
-                cursor: pointer;
-                margin-right: 2rem;
-            }
+           a{
+                margin-top: 2rem;
+                font-weight: 600;
+                font-size: larger;
+            }      
         }
 
         .nav-bottom {
@@ -92,11 +89,11 @@ nav {
                 padding-top: 1rem;
                 flex-direction: row;
                 justify-content: space-around;
-                border-bottom: solid 1px #f345f3;
-                border-top: solid 1px rgba(243, 69, 243, 0.5); /* Borde superior con transparencia */
-                box-shadow: 0px -4px 10px rgba(243, 69, 243, 0.3); /* Sombra en la parte superior */
+                border-bottom: solid 1px #000000;
+                border-top: 1px solid #dcdcdc;
+                box-shadow: 0 -4px 6px -6px #dcdcdc;
                 padding-bottom: 2rem;
-                border-bottom: solid 1px #f345f3;
+                border-bottom: 1px solid #dcdcdc;
                 margin-bottom: 4rem;
             }
 
@@ -121,4 +118,10 @@ span{
 
 .nav-links.show{
     background-color: #FFFFFF;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }

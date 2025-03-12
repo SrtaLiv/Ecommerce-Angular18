@@ -30,7 +30,7 @@
     margin-left: 5px;
 }
 
-.social-media{
+.social-media, .sponsors{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -50,4 +50,26 @@
 }
 .conditions {
     color: #666666;
+}
+
+.condition .conditions{
+    margin: 0px;
+}
+
+.condition{
+    margin-bottom: 2rem;
+}
+
+.sponsors{
+    gap: 10px;
+    margin-bottom: 64px;
+}
+
+.social-media{
+    gap: 30px;
+    @media screen and (max-width: 768px) {
+        .social-media-icon{
+        width: 55px;
+    }
+}
 }
