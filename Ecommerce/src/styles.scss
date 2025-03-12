@@ -12,9 +12,8 @@ body {
 }
 
 body.show {
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con transparencia */
+    overflow-y: hidden;
 }
-
 
 body.show::before {
     content: '';

@@ -1,17 +1,16 @@
 <nav>
   <header>
     <div class="items">
-      <lucide-icon [img]="Menu" (click)="toggleMenu()" class="my-icon menu" name="menu"></lucide-icon>
-      <lucide-angular [img]="Search" name="search" class="my-icon-search"></lucide-angular>
+      <lucide-icon size={{32}} [img]="Menu" (click)="toggleMenu()" class="my-icon menu" name="menu"></lucide-icon>
+      <lucide-angular size={{32}} [img]="Search" name="search" class="my-icon-search"></lucide-angular>
     </div>
-    <h2>47 Street</h2>
+    <img width="120px" height="120px" src="assets/logo.gif" alt="">
     <div class="items">
-      <lucide-angular [img]="User" class="my-icon"></lucide-angular>
-      <lucide-angular [img]="ShoppingBag" class="my-icon" name="shopping-bag"></lucide-angular>
+      <lucide-angular size={{32}} [img]="User" class="my-icon"></lucide-angular>
+      <lucide-angular size={{32}} [img]="ShoppingBag" class="my-icon" name="shopping-bag"></lucide-angular>
     </div>
   </header>
 
-  <!-- NAV LINKS  -->
   <div class="nav-links" [class.show]="menuOpen">
     <div class="nav-top">
       <div class="list" [class.show]="menuOpen">

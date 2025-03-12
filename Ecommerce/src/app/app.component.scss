@@ -2,20 +2,23 @@ nav {
     display: flex;
     flex-direction: column;
     z-index: 20001;  // Increased z-index to be higher than the overlay
-    position: relative;  
+    position: sticky;
+    top: 0;
+  
     header {
-        padding: 0 1rem;
+        padding: 2rem 1rem;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
         height: 56px;
+        width: 100%;
         align-items: center;
-
+        top: 0;
+        position: absolute;
+        justify-content: space-between;
+        flex-direction: row;
         .items {
             display: flex;
             flex-direction: row;
             gap: 6px;
-
             .menu:hover {
                 cursor: pointer;
             }
@@ -125,4 +128,9 @@ a{
     text-decoration: none;
     color: black;
     cursor: pointer;
+}
+
+.nav-color{
+    background-color: #FFFFFF;
+    transition: all 0.3s ease-in-out;
 }
