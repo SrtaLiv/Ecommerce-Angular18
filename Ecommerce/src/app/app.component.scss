@@ -1,7 +1,8 @@
 nav {
     display: flex;
     flex-direction: column;
-
+    z-index: 20001;  // Increased z-index to be higher than the overlay
+    position: relative;  
     header {
         padding: 0 1rem;
         display: flex;
